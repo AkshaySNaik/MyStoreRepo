@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="com.mystore.testcases.TC_BuyProductTest">
+      <class name="com.mystore.testcases.TC_SearchProductTest">
         <methods>
           <include name="tearDown"/>
-          <include name="buyProductTest"/>
           <include name="setUp"/>
+          <include name="searchProduct"/>
         </methods>
-      </class> <!-- com.mystore.testcases.TC_BuyProductTest -->
+      </class> <!-- com.mystore.testcases.TC_SearchProductTest -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [MyStore] -->

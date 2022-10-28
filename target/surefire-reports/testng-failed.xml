@@ -13,13 +13,13 @@
           <include name="verifyAddWishList"/>
         </methods>
       </class> <!-- com.mystore.testcases.TC_VerifyAddToWishlistTest -->
-      <class name="com.mystore.testcases.TC_SearchProductTest">
+      <class name="com.mystore.testcases.TC_BuyProductTest">
         <methods>
           <include name="tearDown"/>
+          <include name="buyProductTest"/>
           <include name="setUp"/>
-          <include name="searchProduct"/>
         </methods>
-      </class> <!-- com.mystore.testcases.TC_SearchProductTest -->
+      </class> <!-- com.mystore.testcases.TC_BuyProductTest -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [MyStore] -->
