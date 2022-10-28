@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyStore" class="navigator-link">
+              <span class="suite-name border-failed">MyStore</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyStore" class="navigator-link ">
+                    <span>C:\Users\User\eclipse-workspace\FrameworkProject\MyStore\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyStore" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyStore" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyStore" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyStore" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyStore" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyStore" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyStore" class="hide-methods failed suite-MyStore"> (hide)</a> <!-- hide-methods failed suite-MyStore -->
+                      <a href="#" panel-name="suite-MyStore" class="show-methods failed suite-MyStore"> (show)</a> <!-- show-methods failed suite-MyStore -->
+                    </span>
+                    <div class="method-list-content failed suite-MyStore">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_BuyProductTest" class="method navigator-link" hash-for-method="buyProductTest">buyProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_LogOutTest" class="method navigator-link" hash-for-method="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A8861...)">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A8861...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_LogOutTest" class="method navigator-link" hash-for-method="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A8861...)">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A8861...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_LogOutTest" class="method navigator-link" hash-for-method="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615...)">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyStore -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyStore" class="hide-methods passed suite-MyStore"> (hide)</a> <!-- hide-methods passed suite-MyStore -->
+                      <a href="#" panel-name="suite-MyStore" class="show-methods passed suite-MyStore"> (show)</a> <!-- show-methods passed suite-MyStore -->
+                    </span>
+                    <div class="method-list-content passed suite-MyStore">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_LogOutTest" class="method navigator-link" hash-for-method="logOutTest({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A8...)">logOutTest({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A8...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_SearchProductTest" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyStore" title="com.mystore.testcases.TC_VerifyAddToWishlistTest" class="method navigator-link" hash-for-method="verifyAddWishList">verifyAddWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyStore -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyStore" class="panel MyStore">
+          <div class="suite-MyStore-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mystore.testcases.TC_LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A8861...)">
+                  </a> <!-- logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A8861...) -->
+                  <span class="method-name">logOutTest</span>
+                  <span class="parameters">({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A88615a*})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3538e5aa653e56a7a6a8ce8e11d40c00, findElement {using=link text, value=Sign in}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64204/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3538e5aa653e56a7a6a8ce8e11d40c00
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.mystore.pageobject.IndexPage.clickSignIn(IndexPage.java:27)
+	at com.mystore.testcases.TC_LogOutTest.logOutTest(TC_LogOutTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A8861...)">
+                  </a> <!-- logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A8861...) -->
+                  <span class="method-name">logOutTest</span>
+                  <span class="parameters">({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A88615a*})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.mystore.testcases.TC_LogOutTest.logOutTest(TC_LogOutTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615...)">
+                  </a> <!-- logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615...) -->
+                  <span class="method-name">logOutTest</span>
+                  <span class="parameters">({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615a*})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3538e5aa653e56a7a6a8ce8e11d40c00, findElement {using=link text, value=Sign in}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64204/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3538e5aa653e56a7a6a8ce8e11d40c00
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.mystore.pageobject.IndexPage.clickSignIn(IndexPage.java:27)
+	at com.mystore.testcases.TC_LogOutTest.logOutTest(TC_LogOutTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStore-class-failed -->
+          <div class="suite-MyStore-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mystore.testcases.TC_BuyProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyProductTest">
+                  </a> <!-- buyProductTest -->
+                  <span class="method-name">buyProductTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=106.0.5249.119)
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05a7245d76e76c0715d06744fc7e4b5c, clickElement {id=ecc2b349-55e5-4d17-b2f8-67f1c640ceb0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64290/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05a7245d76e76c0715d06744fc7e4b5c)] -&gt; xpath: //a[@title=&apos;Proceed to checkout&apos;]//span[1]]
+Session ID: 05a7245d76e76c0715d06744fc7e4b5c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.mystore.pageobject.DressesResultPage.clickProceedCheckout(DressesResultPage.java:53)
+	at com.mystore.testcases.TC_BuyProductTest.buyProductTest(TC_BuyProductTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStore-class-failed -->
+          <div class="suite-MyStore-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mystore.testcases.TC_VerifyAddToWishlistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddWishList">
+                  </a> <!-- verifyAddWishList -->
+                  <span class="method-name">verifyAddWishList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStore-class-passed -->
+          <div class="suite-MyStore-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mystore.testcases.TC_LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutTest({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A8...)">
+                  </a> <!-- logOutTest({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A8...) -->
+                  <span class="method-name">logOutTest</span>
+                  <span class="parameters">({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A88615a*})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStore-class-passed -->
+          <div class="suite-MyStore-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mystore.testcases.TC_SearchProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStore-class-passed -->
+        </div> <!-- panel MyStore -->
+        <div panel-name="test-xml-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\User\eclipse-workspace\FrameworkProject\MyStore\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyStore&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.mystore.utilities.ExtentListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;SmokeTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_SearchProductTest&quot;/&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_LogOutTest&quot;/&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_BuyProductTest&quot;/&gt;
+      &lt;class name=&quot;com.mystore.testcases.TC_VerifyAddToWishlistTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest --&gt;
+&lt;/suite&gt; &lt;!-- MyStore --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyStore</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SmokeTest (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyStore</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">buyProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logOutTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddWishList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyStore</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyStore');
+function tableData_MyStore() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchProduct')
+data.setCell(0, 2, 'com.mystore.testcases.TC_SearchProductTest')
+data.setCell(0, 3, 91983);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'buyProductTest')
+data.setCell(1, 2, 'com.mystore.testcases.TC_BuyProductTest')
+data.setCell(1, 3, 77890);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAddWishList')
+data.setCell(2, 2, 'com.mystore.testcases.TC_VerifyAddToWishlistTest')
+data.setCell(2, 3, 39597);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logOutTest')
+data.setCell(3, 2, 'com.mystore.testcases.TC_LogOutTest')
+data.setCell(3, 3, 37890);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'logOutTest')
+data.setCell(4, 2, 'com.mystore.testcases.TC_LogOutTest')
+data.setCell(4, 3, 31047);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logOutTest')
+data.setCell(5, 2, 'com.mystore.testcases.TC_LogOutTest')
+data.setCell(5, 3, 15076);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'logOutTest')
+data.setCell(6, 2, 'com.mystore.testcases.TC_LogOutTest')
+data.setCell(6, 3, 10048);
+window.suiteTableData['MyStore']= { tableData: data, tableDiv: 'times-div-MyStore'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-MyStore">
+              </div> <!-- times-div-MyStore -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyStore</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mystore.testcases.TC_LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">registeredSignIn</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mystore.testcases.TC_RegistrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">newRegistration</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyStore" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mystore.testcases.TC_SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">88897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">180913 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mystore.testcases.TC_LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">196192 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">logOutTest({Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A8...)</span>
+                <span class="method-start">274723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik2@gmail.com, Browser=Firefox, Password=A8861...)</span>
+                <span class="method-start">305772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Firefox, Password=A8861...)</span>
+                <span class="method-start">344925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logOutTest({Runmode=Y, ExpectedResult=Success, Username=akshaysnaik3@gmail.com, Browser=Chrome, Password=A88615...)</span>
+                <span class="method-start">360304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">370607 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mystore.testcases.TC_BuyProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">377048 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">buyProductTest</span>
+                <span class="method-start">403673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">482118 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mystore.testcases.TC_VerifyAddToWishlistTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">486681 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddWishList</span>
+                <span class="method-start">511857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">551455 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

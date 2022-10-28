@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyStore]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.mystore.utilities.ExtentListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTest(failed)" verbose="0">
+    <classes>
+      <class name="com.mystore.testcases.TC_VerifyAddToWishlistTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyAddWishList"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.TC_VerifyAddToWishlistTest -->
+      <class name="com.mystore.testcases.TC_SearchProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.TC_SearchProductTest -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [MyStore] -->
