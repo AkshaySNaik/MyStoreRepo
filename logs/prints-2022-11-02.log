@@ -1,0 +1,10 @@
+02:56:02.170 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+02:56:02.180 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+02:56:02.180 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+02:56:07.116 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+02:56:09.412 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xbd4c3107e0285009
+02:56:21.268 [main] INFO  com.mystore.testcases.BaseClass - Url Opened
+02:56:46.243 [main] INFO  com.mystore.testcases.BaseClass - Clicked On Sign In Button
+02:56:47.110 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Email Address
+02:56:47.341 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Password
+02:57:12.346 [main] INFO  com.mystore.testcases.BaseClass - Clicked On Sign In Button
