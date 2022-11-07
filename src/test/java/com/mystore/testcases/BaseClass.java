@@ -2,7 +2,11 @@ package com.mystore.testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.time.Duration;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -82,12 +86,37 @@ public class BaseClass {
 	
 	
 	
-	public String randomlyGetStringValue() {
-		
-		return RandomStringUtils.randomAlphabetic(5);
+	// Get Random String Values From RandomStringUtils
+	public String getRandomStringValue(int number) {
+
+		return RandomStringUtils.randomAlphabetic(number);
 	}
 
-	
+	// Get Random Integer Values From Random Class
+	public int getRandomIntValue(int number) {
+
+		Random random = new Random();
+		return (random.nextInt(number));
+
+	}
+
+	// JDBC Connection For DataBase Testing
+	public void JDBCTest(String connection, String sqlstatment) {
+
+		try {
+
+			Connection conection = DriverManager.getConnection(connection);
+
+			Statement statement = conection.createStatement();
+			statement.execute(sqlstatment);
+
+			conection.close();
+
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+
+	}
 	
 	public void captureScreenshot(WebDriver driver, String testname){
 

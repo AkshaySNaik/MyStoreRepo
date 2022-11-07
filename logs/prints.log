@@ -1,8 +1,8 @@
-14:06:46.626 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
-14:06:48.099 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-14:06:49.157 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x25f5b4de3d9d1d2e
-14:07:02.763 [main] INFO  com.mystore.testcases.BaseClass - Url Opened
-14:07:40.684 [main] INFO  com.mystore.testcases.BaseClass - Test Passed
-14:07:50.555 [main] INFO  com.mystore.testcases.BaseClass - Url Opened
-14:10:37.723 [main] INFO  com.mystore.testcases.BaseClass - Url Opened
-14:12:00.368 [main] INFO  com.mystore.testcases.BaseClass - Url Opened
+02:57:12.623 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Email Address
+02:57:12.940 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Password
+02:57:38.018 [main] INFO  com.mystore.testcases.BaseClass - Clicked On Sign In Button
+02:57:38.276 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Email Address
+02:57:38.474 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Password
+02:57:58.373 [main] INFO  com.mystore.testcases.BaseClass - Clicked On Sign In Button
+02:57:58.638 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Email Address
+02:57:58.928 [main] INFO  com.mystore.testcases.BaseClass - Entered Registered Password

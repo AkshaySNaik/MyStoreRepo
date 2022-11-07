@@ -6,20 +6,13 @@
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)" verbose="0">
     <classes>
-      <class name="com.mystore.testcases.TC_VerifyAddToWishlistTest">
+      <class name="com.mystore.testcases.TC_LogOutTest">
         <methods>
+          <include name="logOutTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyAddWishList"/>
         </methods>
-      </class> <!-- com.mystore.testcases.TC_VerifyAddToWishlistTest -->
-      <class name="com.mystore.testcases.TC_BuyProductTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="buyProductTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.TC_BuyProductTest -->
+      </class> <!-- com.mystore.testcases.TC_LogOutTest -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [MyStore] -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="9" passed="5" failed="2" skipped="0">
+<testng-results ignored="2" total="9" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T14:06:39 IST" name="MyStore" finished-at="2022-10-28T14:12:17 IST" duration-ms="337885">
+  <suite started-at="2022-10-28T16:36:27 IST" name="MyStore" finished-at="2022-10-28T16:40:15 IST" duration-ms="227654">
     <groups>
       <group name="Smoke">
         <method signature="TC_BuyProductTest.buyProductTest()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" name="buyProductTest" class="com.mystore.testcases.TC_BuyProductTest"/>
@@ -11,35 +11,56 @@
         <method signature="TC_VerifyAddToWishlistTest.verifyAddWishList()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" name="verifyAddWishList" class="com.mystore.testcases.TC_VerifyAddToWishlistTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-10-28T14:06:39 IST" name="SmokeTest" finished-at="2022-10-28T14:12:17 IST" duration-ms="337885">
+    <test started-at="2022-10-28T16:36:27 IST" name="SmokeTest" finished-at="2022-10-28T16:40:15 IST" duration-ms="227654">
       <class name="com.mystore.testcases.TC_VerifyAddToWishlistTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T14:11:46 IST" name="setUp" finished-at="2022-10-28T14:12:00 IST" duration-ms="14350" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T16:39:52 IST" name="setUp" finished-at="2022-10-28T16:40:06 IST" duration-ms="13321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddWishList()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T14:12:00 IST" name="verifyAddWishList" finished-at="2022-10-28T14:12:15 IST" duration-ms="15386" status="FAIL">
+        <test-method signature="verifyAddWishList()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T16:40:06 IST" name="verifyAddWishList" finished-at="2022-10-28T16:40:14 IST" duration-ms="8405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddWishList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T16:40:14 IST" name="tearDown" finished-at="2022-10-28T16:40:15 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.testcases.TC_VerifyAddToWishlistTest -->
+      <class name="com.mystore.testcases.TC_LogOutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:37:09 IST" name="setUp" finished-at="2022-10-28T16:37:19 IST" duration-ms="10084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:37:22 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T16:37:33 IST" duration-ms="10807" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A88615a*}]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='fancybox-error']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
   (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.0', revision: 'fe167b119a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b80b3ee0ecf0c0a825b3d89def15a7, findElement {using=xpath, value=//p[@class='fancybox-error']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b80b3ee0ecf0c0a825b3d89def15a7]]>
+Command: [0ca3fd6600e8d1459e3ec053618bdaa0, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53192/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ca3fd6600e8d1459e3ec053618bdaa0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='fancybox-error']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
   (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.0', revision: 'fe167b119a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b80b3ee0ecf0c0a825b3d89def15a7, findElement {using=xpath, value=//p[@class='fancybox-error']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b80b3ee0ecf0c0a825b3d89def15a7
+Command: [0ca3fd6600e8d1459e3ec053618bdaa0, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53192/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ca3fd6600e8d1459e3ec053618bdaa0
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -51,14 +72,14 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
-at com.mystore.pageobject.TShirtPage.getWishListErrorMess(TShirtPage.java:59)
-at com.mystore.testcases.TC_VerifyAddToWishlistTest.verifyAddWishList(TC_VerifyAddToWishlistTest.java:21)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.mystore.pageobject.MyAccountPage.enterRegisteredEmail(MyAccountPage.java:45)
+at com.mystore.testcases.TC_LogOutTest.logOutTest(TC_LogOutTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -94,29 +115,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddWishList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_VerifyAddToWishlistTest@16293aa2]" started-at="2022-10-28T14:12:16 IST" name="tearDown" finished-at="2022-10-28T14:12:17 IST" duration-ms="1432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mystore.testcases.TC_VerifyAddToWishlistTest -->
-      <class name="com.mystore.testcases.TC_LogOutTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:07:41 IST" name="setUp" finished-at="2022-10-28T14:07:50 IST" duration-ms="8851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:07:56 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T14:08:54 IST" duration-ms="58093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=akshaysnaik1005@gmail.com, Browser=Firefox, Password=A88615a*}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:08:54 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T14:09:35 IST" duration-ms="41591" status="PASS">
+        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:37:33 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T16:38:09 IST" duration-ms="36159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:09:35 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T14:10:02 IST" duration-ms="26653" status="PASS">
+        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:38:09 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T16:38:25 IST" duration-ms="16389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,7 +138,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:10:02 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T14:10:18 IST" duration-ms="16150" status="PASS">
+        <test-method signature="logOutTest(java.util.HashMap)[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:38:25 IST" name="logOutTest" data-provider="dataSupplier" finished-at="2022-10-28T16:38:35 IST" duration-ms="9729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,109 +149,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T14:10:18 IST" name="tearDown" finished-at="2022-10-28T14:10:19 IST" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_LogOutTest@222545dc]" started-at="2022-10-28T16:38:35 IST" name="tearDown" finished-at="2022-10-28T16:38:36 IST" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mystore.testcases.TC_LogOutTest -->
       <class name="com.mystore.testcases.TC_SearchProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T14:06:40 IST" name="setUp" finished-at="2022-10-28T14:07:02 IST" duration-ms="22369" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T16:36:28 IST" name="setUp" finished-at="2022-10-28T16:36:50 IST" duration-ms="22277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchProduct()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T14:07:02 IST" name="searchProduct" finished-at="2022-10-28T14:07:40 IST" duration-ms="37888" status="PASS">
+        <test-method signature="searchProduct()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T16:36:50 IST" name="searchProduct" finished-at="2022-10-28T16:37:08 IST" duration-ms="18151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T14:07:40 IST" name="tearDown" finished-at="2022-10-28T14:07:41 IST" duration-ms="949" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_SearchProductTest@6c64cb25]" started-at="2022-10-28T16:37:08 IST" name="tearDown" finished-at="2022-10-28T16:37:09 IST" duration-ms="462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mystore.testcases.TC_SearchProductTest -->
       <class name="com.mystore.testcases.TC_BuyProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T14:10:19 IST" name="setUp" finished-at="2022-10-28T14:10:37 IST" duration-ms="18218" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T16:38:36 IST" name="setUp" finished-at="2022-10-28T16:38:49 IST" duration-ms="13231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="buyProductTest()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T14:10:37 IST" name="buyProductTest" finished-at="2022-10-28T14:11:44 IST" duration-ms="66697" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='cheque']"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72920d3a7a9bc657bd70b4043965b658, findElement {using=xpath, value=//a[@class='cheque']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72920d3a7a9bc657bd70b4043965b658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='cheque']"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72920d3a7a9bc657bd70b4043965b658, findElement {using=xpath, value=//a[@class='cheque']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 72920d3a7a9bc657bd70b4043965b658
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
-at com.mystore.pageobject.DressPaymentPage.clickCashPay(DressPaymentPage.java:23)
-at com.mystore.testcases.TC_BuyProductTest.buyProductTest(TC_BuyProductTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="buyProductTest()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T16:38:49 IST" name="buyProductTest" finished-at="2022-10-28T16:39:52 IST" duration-ms="62655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T14:11:45 IST" name="tearDown" finished-at="2022-10-28T14:11:46 IST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_BuyProductTest@5c5eefef]" started-at="2022-10-28T16:39:52 IST" name="tearDown" finished-at="2022-10-28T16:39:52 IST" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

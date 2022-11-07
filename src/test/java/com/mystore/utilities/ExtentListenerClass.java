@@ -29,7 +29,7 @@ public class ExtentListenerClass extends BaseClass implements ITestListener {
 
 		ReadConfigFiles configfile = new ReadConfigFiles();
 
-		String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
+		String timestamp = new SimpleDateFormat("yyyy.MM.dd.hh.mm.ss").format(new Date());
 		String reportname = "MyStoreReport" + timestamp + ".html";
 
 		String reportPath = System.getProperty("user.dir") + "//Reports//" + reportname;

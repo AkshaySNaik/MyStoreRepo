@@ -18,7 +18,7 @@ public class TC_LoginTest extends BaseClass {
 	
 	 
 
-	@Test(dataProvider = "dataSender", enabled = false)
+	@Test(dataProvider = "dataSender", enabled = true)
 	public void registeredSignIn(HashMap<String, String> hMap) throws IOException {
 
 		if (!ReadXlsxFile.isRunnable(xlsreader, "LoginTest", "Testcases") || hMap.get("Runmode").equals("N")) {
