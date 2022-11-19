@@ -41,9 +41,10 @@ public class ExtentListenerClass extends BaseClass implements ITestListener {
 		report = new ExtentReports();
 		report.attachReporter(htmlReport);
 		report.setSystemInfo("Machine", "TestPC01");
-		report.setSystemInfo("OS", "Windows 10");
+		report.setSystemInfo("Operating System", System.getProperty("os.name"));
+		report.setSystemInfo("Java Version", System.getProperty("java.version"));
 		report.setSystemInfo("Browser", configfile.getExcelBrowsers());
-		report.setSystemInfo("User Name", "Akshay");
+		report.setSystemInfo("User Name", System.getProperty("user.name"));
 
 	}
 
